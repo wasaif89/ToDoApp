@@ -24,7 +24,8 @@ class SecondViewController: UIViewController {
 //        }else {
 //            lists.items = [itemObject]
 //        }
-        // UserDefaults.standard.set(list.items, forKey: "list-items")
+        
+    //  UserDefaults.standard.set(list.items, forKey: "list-items")
         navigationController?.popViewController(animated: true)
         
         

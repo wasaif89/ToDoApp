@@ -149,7 +149,11 @@
                                     <action selector="deleteAll:" destination="Jpo-z8-nWs" id="Yjy-rq-Ufb"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Edit" id="3dL-Hg-XzY"/>
+                            <barButtonItem title="Edit" id="3dL-Hg-XzY">
+                                <connections>
+                                    <segue destination="G0O-ei-fXU" kind="show" id="BEd-Hc-imt"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -170,12 +174,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tG0-qf-LGs">
-                                <rect key="frame" x="30" y="317" width="354" height="39.5"/>
+                                <rect key="frame" x="30" y="361" width="354" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="976-Rc-urF">
-                                <rect key="frame" x="139" y="424" width="136" height="38"/>
+                                <rect key="frame" x="139" y="468" width="136" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="eW5-c3-hdO"/>
                                     <constraint firstAttribute="height" constant="38" id="rH3-ly-85u"/>
@@ -192,13 +196,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-8n-MlM">
-                                <rect key="frame" x="30" y="370" width="354" height="34"/>
+                                <rect key="frame" x="30" y="414" width="354" height="34"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEB-nl-i3w">
-                                <rect key="frame" x="95" y="239" width="224" height="36"/>
+                                <rect key="frame" x="95" y="283" width="224" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.27058823529999998" green="0.55294117649999996" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -221,6 +225,7 @@
                             <constraint firstItem="iUw-8n-MlM" firstAttribute="top" secondItem="tG0-qf-LGs" secondAttribute="bottom" constant="13.5" id="qpf-gl-v2z"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uFw-BP-p5l"/>
                     <connections>
                         <outlet property="editNote" destination="iUw-8n-MlM" id="iki-8N-sw6"/>
                         <outlet property="editTitle" destination="tG0-qf-LGs" id="oda-5y-Oyl"/>
@@ -228,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPx-G9-NnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="270"/>
+            <point key="canvasLocation" x="522" y="279"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3eC-zq-qC1">
