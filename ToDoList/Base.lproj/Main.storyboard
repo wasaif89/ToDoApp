@@ -143,22 +143,16 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Delete All" id="RIa-zK-hQi">
-                                <connections>
-                                    <action selector="deleteAll:" destination="Jpo-z8-nWs" id="Yjy-rq-Ufb"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Edit" id="3dL-Hg-XzY">
-                                <connections>
-                                    <segue destination="G0O-ei-fXU" kind="show" id="BEd-Hc-imt"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Delete All" id="RIa-zK-hQi">
+                            <connections>
+                                <action selector="deleteAll:" destination="Jpo-z8-nWs" id="Yjy-rq-Ufb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="table" destination="d4S-qV-jG7" id="UDp-yr-lNg"/>
+                        <segue destination="G0O-ei-fXU" kind="show" identifier="editSegue" id="rZY-XD-Y6q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKe-Nn-hf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,7 +12,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var table: UITableView!
     
     var list : List = List()
-    
+    var userSelectedCell : Int!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.items.count
     }
@@ -52,14 +52,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
         table.reloadData()
-        UserDefaults.standard.set(list.items, forKey: "list-items")
+        //UserDefaults.standard.set(list.items, forKey: "list-items")
     }
     
     
    // func moveItem(from: IndexSet, to: Int){
    //     items.move.(fromOffsets: from, toOffset: to)
    //}
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("User selected: \(indexPath.row)")
+        userSelectedCell = indexPath.row
+        performSegue(withIdentifier: "editSegue", sender: self)
+    }
    
 
    // func edit(changes: , indexPath.row: Int){
@@ -76,6 +80,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if (segue.identifier == "addSegue") {
             let secVC = segue.destination as! SecondViewController
             secVC.list = list
-        }
+            
+        } else if(segue.identifier == "editSegue") {
+            let thirdVC2 = segue.destination as! ThirdViewController
+            thirdVC2.list = list
+            thirdVC2.selectedIndex = userSelectedCell
+}
     }
+
 }
