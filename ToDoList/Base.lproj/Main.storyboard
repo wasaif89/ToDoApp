@@ -180,13 +180,13 @@
                                 </constraints>
                                 <color key="tintColor" red="0.27058823529999998" green="0.55294117649999996" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Save">
+                                <buttonConfiguration key="configuration" style="tinted" title="Update">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseBackgroundColor" red="0.53725490200000003" green="0.73333333329999995" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="add:" destination="f3K-iK-i0E" eventType="touchUpInside" id="HXD-d8-O5i"/>
-                                    <action selector="save:" destination="G0O-ei-fXU" eventType="touchUpInside" id="Hc8-rB-aYE"/>
+                                    <action selector="update:" destination="G0O-ei-fXU" eventType="touchUpInside" id="vfu-sz-8w0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-8n-MlM">
