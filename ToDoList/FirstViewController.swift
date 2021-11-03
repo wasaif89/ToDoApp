@@ -1,9 +1,7 @@
 //
 //  FirstViewController.swift
 //  ToDoList
-//
-//  Created by Abu FaisaL on 23/03/1443 AH.
-//
+
 
 import UIKit
 

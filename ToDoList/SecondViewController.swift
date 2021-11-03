@@ -11,13 +11,13 @@ class SecondViewController: UIViewController {
     var list : List! 
 
     
-    @IBOutlet weak var itemTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
     
     @IBOutlet weak var noteTextField: UITextField!
     @IBAction func add(_ sender: Any) {
         
 
-            let item = TaskItem(title: itemTextField.text!, note: noteTextField.text!)
+            let item = TaskItem(title: titleTextField.text!, note: noteTextField.text!)
             list.items.append(item)
 
         
